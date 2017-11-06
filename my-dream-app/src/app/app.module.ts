@@ -9,11 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { ShopComponent } from './shop/shop.component';
+import { OutputComponent } from './output/output.component';
 
 
 @NgModule({
   declarations: [
-   AppComponent
+   AppComponent,
+   OutputComponent
    // AppPremier,
   // TestViaCommandeComponent
 /*  ShopComponent*/],

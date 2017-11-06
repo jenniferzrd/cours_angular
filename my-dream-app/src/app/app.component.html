@@ -24,4 +24,6 @@
     <input matInput placeholder="Favorite food" value="Sushi">
   </mat-form-field>
 </form> -->
-<app-parent></app-parent>  
+<app-parent></app-parent>
+<app-output [greeting] = 'parentGreeting' (signalParent)="receiveSignal($event)"></app-output>   
+<!-- mon child, quand il va s'initialiser, il va automatiquement prendre en input greeting -->

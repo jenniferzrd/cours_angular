@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
   // styleUrls: ['./app.monpremiercomponent.css']
 })
 export class AppComponent {
-  title = 'app';
+  // title = 'app';
+
+  parentGreeting: string;
+  
+  constructor () {
+    this.parentGreeting = 'Hello';
+    }
+    
+    receiveSignal(name) {
+      this.parentGreeting = name; 
+  }
+
 }
